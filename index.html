@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/6b7d429c30.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+      integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper" id="wrapper">
+        <h1>Palindrome</h1>
+        <form action="">
+          <label for="userInput">Input Text</label>
+          <input
+            type="text"
+            name="userInput"
+            id="userInput"
+            placeholder="Write here..."
+            id="userInput"
+          />
+        </form>
+        <button onclick="palindrome_checker()">Check text</button>
+        <!-- <p id="userText">Your word is:</p> -->
+        <div class="result-wrapper">
+          <p>Your text: <span id="resultText"></span></p>
+          <p>Your word is:<span id="palindrome"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Js -->
+    <script src="script.js"></script>
+  </body>
+</html>
